@@ -700,11 +700,17 @@ body {
     margin: 0 auto;
   }
 
-@media (max-width: 480px) {
-    .main_container_right img {
-        max-height: 38vh;
+@media (max-width: 768px) {
+    .main_container_right {
+        display: none;
     }
 
+    .main_container_left {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
     .tab {
         min-width: 100%;
         text-align: center;
